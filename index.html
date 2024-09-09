@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Flash Card</title>
+</head>
+<body>
+    <div class="login">
+        <p class="login__h1">Login</p>
+        <form class="login__form">
+            <div class="login__input">
+                <label for="username">Username</label>
+                <input type="email" name="username" id="username" placeholder="Email" required autocomplete="off">
+            </div>
+            <div class="login__input login__pass">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label class="pass__eye-check">
+                    <input type="checkbox" name="hidden-eye" id="hidden-eye" hidden>
+                    <i class="fa-solid fa-eye-slash pass__eye" id="hidden"></i>
+                    <i class="fa-solid fa-eye pass__eye"></i>
+                </label>                
+                <div class="login__forgot">
+                    <a rel="noopener noreferrer" href="#">Forgot Password?</a>
+                </div>
+            </div>
+            <button class="login__sign">Sign in</button>
+        </form>
+        <div class="login__social">
+            <div class="social__line"></div>
+            <p class="social__message">Login with social accounts</p>
+            <div class="social__line"></div>
+        </div>
+        <div class="social__icons">
+            <button aria-label="Log in with Google" class="social__icon">
+                <i class="fa-brands fa-google"></i>
+            </button>
+            <button aria-label="Log in with Twitter" class="social__icon">
+                <i class="fa-brands fa-facebook"></i>
+            </button>
+            <button aria-label="Log in with GitHub" class="social__icon">
+                <i class="fa-brands fa-apple"></i>
+            </button>
+        </div>
+        <p class="signup">Don't have an account?
+            <a rel="noopener noreferrer" href="#" class="signup__btn">Sign up</a>
+        </p>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

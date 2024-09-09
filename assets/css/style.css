@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg_color:#111827;
+    --white: #f3f4f6;
+    --purple-light: #a78bfa;
+    --purple-dark: #7056ba;
+    --line: #374151;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;   
+}
+
+.login {
+    width: 320px;
+    border-radius: 20px;
+    background: var(--bg_color);
+    padding: 30px 35px;
+    color: var(--white);
+}
+
+.login__h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.login__form {
+    margin-top: 15px;
+}
+
+.login__input {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    line-height: 13px;
+}
+
+.login__input label {
+    display: block;
+    color: #9ca3af;
+    margin: 0 0 5px 5px;
+}
+
+.login__input input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    outline: 0;
+    background: var(--bg_color);
+    padding: 8px 10px;
+    color: var(--white);
+}
+
+.login__input input:focus {
+    border-color: var(--purple-light);
+}
+
+.login__pass {
+    position: relative;
+}
+
+.pass__eye {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    cursor: pointer;
+}
+.pass__eye {
+    display: block;
+}
+
+.pass__eye-check:checked .pass__eye{
+    display: none;
+}
+
+
+
+.login__forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #fff;
+    margin: 8px 0 14px 0;
+}
+
+.login__forgot a,.signup a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.login__forgot a:hover, .login__forgot a:active, .login a:hover, .login a:active {
+    text-decoration: underline var(--purple-light);
+}
+
+.login__sign {
+    display: block;
+    width: 100%;
+    background: var(--purple-light);
+    padding: 8px;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login__sign:hover, .login__sign:active{
+    background: var(--purple-dark);
+}
+
+.login__social {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social__line {
+    height: 1px;
+    flex: 1 1 0%;
+    background: var(--line);
+}
+
+.social__message {
+    padding: 0 8px 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+}
+
+.social__icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social__icon {
+    font-size: 2.3rem;
+    margin: 8px 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.social__icon:hover, .social__icon:active {
+    color: var(--purple-light);
+    transform: scale(1.5);
+}
+
+.signup {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+}
+
+.signup__btn {
+    margin-left: 2px;
+}
+
+.signup__btn:hover, .signup__btn:active {
+    text-shadow: 1px solid #fff;
+}
