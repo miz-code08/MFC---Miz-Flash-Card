@@ -135,7 +135,7 @@ body {
     text-decoration: underline var(--dark);
 }
 
-.login__sign {
+.login__signin {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -150,7 +150,7 @@ body {
     transition: .3s;
 }
 
-.login__sign:hover, .login__sign:active{
+.login__signin:hover, .login__signin:active{
     background: var(--blueDark);
 }
 
