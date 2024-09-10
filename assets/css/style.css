@@ -168,7 +168,7 @@ body {
 
 .social__message {
     padding: 0 8px 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.25rem;
     color: var(--light);
 }
@@ -195,13 +195,9 @@ body {
 
 .signup {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1rem;
     color: var(--light);
-}
-
-.signup__btn {
-    margin-left: 2px;
 }
 
 .signup__btn:hover, .signup__btn:active {
