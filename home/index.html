@@ -78,6 +78,28 @@
     </nav>
     <!-- nội dung -->
     <div class="container">
+        <!-- toolbar -->
+        <div class="toolbar">
+            <!-- add new card folder -->
+            <button class="new__btn">
+                <i class="fa-solid fa-plus"></i>
+                <span>New box</span>
+            </button>
+            <div class="newbox">
+                <p class="newbox__desc">New box</p>
+                <input type="text" name="newbox" id="newbox" class="newbox__input" value="New box no title">
+                <div class="newbox__btn">                    
+                    <button>Cancel</button>
+                    <button>Create</button>
+                </div>
+            </div>
+            <!-- delete -->
+            <button class="delete__btn">
+                <i class="fa-solid fa-trash"></i>
+                <span>Delete box</span>
+            </button>
+        </div>        
+        <div class="line"></div>
         <!-- folder flashcard-->
         <div class="folder">
             <!-- folder1 -->
@@ -122,5 +144,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/main.js"></script>
 </body>
 </html>

@@ -49,4 +49,9 @@
     .folder {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .newbox {
+        top: 40%;
+        left: 10%;
+    }
 }

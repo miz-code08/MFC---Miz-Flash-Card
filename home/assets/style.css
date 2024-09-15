@@ -82,8 +82,75 @@ nav {
     border: 3px solid #fff;
     color: #fff;
 }
+/* ========================================TOOLBAR======================================== */
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.new__btn,
+.delete__btn {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+}
 
+.new__btn:hover,
+.delete__btn:hover {
+    background: #d3d3d3;
+}
+
+.line {
+    margin: 20px 0px;
+    border: 1px solid #fff;
+}
+/* ========================================NEW BOX======================================== */
+.newbox {
+    /* display: none; */
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 300px;
+    padding: 20px 15px;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    border: 3px solid #d7d7d7;
+}
+
+.newbox__desc {
+    font-size: 2rem;
+    margin-left: 3px;
+}
+
+.newbox__input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.newbox__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.newbox__btn button{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newbox__btn button:hover {
+    background: #d3d3d3;
+}
 /* ========================================FOLDER======================================== */
 .folder {
     display: grid;
