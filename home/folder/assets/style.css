@@ -85,9 +85,10 @@ nav {
 .toolbar {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
+.back__btn,
 .new__btn,
 .delete__btn {
     padding: 15px 20px;
@@ -98,6 +99,7 @@ nav {
     transition: 0.3s;
 }
 
+.back__btn:hover,
 .new__btn:hover,
 .delete__btn:hover {
     background: #d3d3d3;
@@ -107,12 +109,16 @@ nav {
     margin-left: auto;
 }
 
+.folder_name {
+    margin: 0 auto;
+}
+
 .line {
     margin: 20px 0px;
     border: 1px solid #fff;
 }
 /* ========================================NEW BOX======================================== */
-.newbox {
+.newflashcard {
     /* display: none; */
     position: absolute;
     top: 50%;
@@ -126,24 +132,28 @@ nav {
     border: 3px solid #d7d7d7;
 }
 
-.newbox__desc {
+.newflashcard__desc {
     font-size: 2rem;
     margin-left: 3px;
 }
 
-.newbox__input {
+.front,
+.backside,
+.cardtype {
     width: 100%;
     padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
-.newbox__btn {
+.newflashcard__btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
     gap: 10px;
 }
-.newbox__btn button{
+.newflashcard__btn button{
     border: none;
     padding: 10px;
     border-radius: 20px;
@@ -152,50 +162,32 @@ nav {
     transition: 0.3s;
 }
 
-.newbox__btn button:hover {
+.newflashcard__btn button:hover {
     background: #d3d3d3;
 }
-/* ========================================FOLDER======================================== */
-.folder {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-.folder__item {
-    position: relative;
-    text-decoration: none;
-    transition: 0.3s;
-    background: #fff;
-    border-radius: 15px;
-    color: #000;
-}
-
-.folder__link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 15px 30px 15px 15px;
+/* ========================================CARD LIST======================================== */
+.card_list {
     font-size: 1.5rem;
-    cursor: default;
-    gap: 10px;
-    color: #000;
 }
 
-.folder__item:hover {
-    background: #d3d3d3;
+.table {
+    width: 100%;
 }
 
-.folder__more {
+.table__head {
+    text-align: left;
+}
+
+td {
+    border-top: 1px solid #000;
+    width: 30%;
+}
+
+.table__tool {
+    border: none;
+}
+
+.table__tool .fa-solid {
     cursor: pointer;
-    padding: 7px 13px;
-    border-radius: 50%;
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    transition: 0.3s;
-}
-
-.folder__more:hover {    
-    background: #bbbbbb;
+    margin-left: 10px;
 }
