@@ -80,4 +80,48 @@ nav {
 .nav_item__learn {
     border: 3px solid #fff;
     color: #fff;
+}   
+/* ========================================FOLDER======================================== */
+.folder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.folder__item {
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+    background: #fff;
+    border-radius: 15px;
+    color: #000;
+}
+
+.folder__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 30px 15px 15px;
+    font-size: 1.5rem;
+    cursor: default;
+    gap: 10px;
+    color: #000;
+}
+
+.folder__item:hover {
+    background: #d3d3d3;
+}
+
+.folder__more {
+    cursor: pointer;
+    padding: 7px 13px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    transition: 0.3s;
+}
+
+.folder__more:hover {    
+    background: #bbbbbb;
 }
