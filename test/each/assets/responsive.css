@@ -45,15 +45,8 @@
         margin-left: 0;
         padding: 10px;
     }
-
-    .choose {
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .choose__box {
-        width: 200px;
-        height: 200px;
+    
+    .folder {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg_color:#111827;
+    --white: #f3f4f6;
+    --white: #f3f4f6;
+    --purple-light: #a78bfa;
+    --purple-dark: #7056ba;
+    --line: #374151;
+
+    --purple: #40396e;
+    --blue: #70bfff;
+    --blueLight: #d9eeff;
+    --blueLight1: #c1e3fe;
+    --blueDark: #2da0ff;
+    --light: #fff;
+    --dark: #000;
+}
+
+body {   
+    min-height: 100vh;   
+    background: var(--blueLight);
+}
+
+.container {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 20px;
+}
+/* ========================================NAVBAR======================================== */
+nav {
+    width: 250px;
+    height: 100vh;
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav__logo {
+    margin: 5px 0px 15px 10px;  
+}
+
+.nav__logo img{
+    width: 150px;
+}
+
+.nav_link {
+    color: #000;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav_link__img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.nav_link:hover {
+    background: var(--blueDark);
+}
+
+.nav_item__test {
+    border: 3px solid #fff;
+    color: #fff;
+}   
+/* ========================================TOOLBAR======================================== */
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.back__btn {
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.back__btn:hover {
+    background: #d3d3d3;
+}
+
+.score__desc {
+    font-size: 2rem;
+}
+
+.score__suggest {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #cbcb32;
+}
+
+.line {
+    margin: 20px 0px;
+    border: 1px solid #fff;
+}
+/* ========================================FLASHCARD======================================== */
+.flashcard {
+    margin: 20px auto;
+    width: 350px;
+    height: 484px;
+    width: 48vh;
+    height: 66vh;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flashcard div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.front {
+    background-image: url(../../../../images/flashcard.svg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    color: #000;
+}
+
+.back {
+    background-image: url(../../../../images/flashcard.svg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    color: #000;
+    transform: rotateY(180deg);
+}
+
+.flipped .front {
+    transform: rotateY(-180deg);
+}
+
+.flipped .back {
+    transform: rotateY(0);
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrow__btn {
+    border: none;    
+    color: var(--blueLight);
+    background: #ff0000;
+    background: linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    background: -webkit-linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    background: -moz-linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    font-size: 2.5rem;
+    /* margin-right: 10px; */
+    padding: 5px 13px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.submit input {
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    /* min-width: 20%; */
+}
+
+.submit button {
+    background: var(--blueDark);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
