@@ -45,4 +45,8 @@
         margin-left: 0;
         padding: 10px;
     }
+    
+    .folder {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

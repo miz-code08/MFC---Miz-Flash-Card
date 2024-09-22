@@ -91,14 +91,21 @@
             </div>
         </div>    
         <!-- flashcard -->
-        <label>
-            <div class="flashcard" id="flashcard">
-                <div class="front">Cat</div>
-                <div class="back">Mèo</div>
-            </div>
-            <button onclick="flipCard()" hidden>Lật thẻ</button>
-        </label>
-        
+        <div class="flashcard" id="flashcard">
+            <label>
+                    <div class="front">Cat</div>
+                    <div class="back">Mèo</div>         
+                <button onclick="flipCard()" hidden>Lật thẻ</button>
+            </label>
+        </div>        
+        <div class="arrow">
+            <button class="arrow__left arrow__btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="arrow__right arrow__btn">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
     </div>
     <script src="./assets/main.js"></script>
 </body>

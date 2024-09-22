@@ -111,6 +111,7 @@ nav {
 
 .folder_name {
     margin: 0 auto;
+    translate: -33px 0;
 }
 
 .line {
@@ -119,16 +120,13 @@ nav {
 }
 /* ========================================FLASHCARD======================================== */
 .flashcard {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-0%, -50%);
+    margin: 20px auto;
     width: 350px;
     height: 484px;
-    /* background-image: url(../../../images/flashcard.svg);
-    background-repeat: no-repeat;
-    background-size: cover;     */
+    width: 48vh;
+    height: 66vh;
     perspective: 1000px;
+    position: relative;
 }
 
 .flashcard div {
@@ -142,6 +140,7 @@ nav {
     font-size: 24px;
     border-radius: 10px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .front {
@@ -165,4 +164,25 @@ nav {
 
 .flipped .back {
     transform: rotateY(0);
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrow__btn {
+    border: none;    
+    color: var(--blueLight);
+    background: #ff0000;
+    background: linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    background: -webkit-linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    background: -moz-linear-gradient(40deg,#ff0000 50%, #ff6f6f 50%);
+    font-size: 2.5rem;
+    /* margin-right: 10px; */
+    padding: 5px 13px;
+    border-radius: 999px;
+    cursor: pointer;
 }
