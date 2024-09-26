@@ -25,8 +25,6 @@ html {
     --blueDark: #2da0ff;
     --light: #fff;
     --dark: #000;
-
-    --card-text: #0eb8cf;
 }
 
 body {   
@@ -79,7 +77,7 @@ nav {
     background: var(--blueDark);
 }
 
-.nav_item__learn {
+.nav_item__test {
     border: 3px solid #fff;
     color: #fff;
 }   
@@ -87,12 +85,11 @@ nav {
 .toolbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 15px;
 }
 
-.back__btn,
-.new__btn,
-.delete__btn {
+.back__btn {
     padding: 15px 20px;
     border-radius: 10px;
     border: none;
@@ -101,19 +98,20 @@ nav {
     transition: 0.3s;
 }
 
-.back__btn:hover,
-.new__btn:hover,
-.delete__btn:hover {
+.back__btn:hover {
     background: #d3d3d3;
 }
 
-.delete__btn {
-    margin-left: auto;
+.score__desc {
+    font-size: 2rem;
 }
 
-.folder_name {
-    margin: 0 auto;
-    translate: -33px 0;
+.score__suggest {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #cbcb32;
 }
 
 .line {
@@ -148,16 +146,14 @@ nav {
     background-image: url(../../../../images/flashcard.svg);
     background-repeat: no-repeat;
     background-size: cover;  
-    font-weight: bold;
-    color: var(--card-text);
+    color: #000;
 }
 
 .back {
     background-image: url(../../../../images/flashcard.svg);
     background-repeat: no-repeat;
     background-size: cover;  
-    font-weight: bold;
-    color: var(--card-text);
+    color: #000;
     transform: rotateY(180deg);
 }
 
@@ -188,4 +184,26 @@ nav {
     padding: 5px 13px;
     border-radius: 999px;
     cursor: pointer;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.submit input {
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    /* min-width: 20%; */
+}
+
+.submit button {
+    background: var(--blueDark);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 20px;
 }
