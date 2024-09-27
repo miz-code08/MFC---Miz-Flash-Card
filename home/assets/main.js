@@ -15,7 +15,18 @@ cancel.addEventListener("click", function(e) {
     newBox.hidden = true;
 })
 
-create.addEventListener("click", function(e) {
+create.addEventListener("click", function(e) { 
+    if(input.value === "") {
+        alert("Vui lòng nhập tên cho folder");
+    }
+    else {
+        createFolder();
+        input.value = "New box no title";
+        newBox.hidden = true;
+    }
+})
+
+function createFolder() {
     // Tạo phần tử div với class folder__item
     const folderItem = document.createElement('div');
     folderItem.className = 'folder__item';
@@ -61,7 +72,4 @@ create.addEventListener("click", function(e) {
 
     // Gắn div folder__item vào container
     document.querySelector(`.folder`).appendChild(folderItem);
-
-    input.value = "New box no title";
-    newBox.hidden = true;
-})
+}

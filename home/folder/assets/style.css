@@ -185,9 +185,19 @@ td {
 
 .table__tool {
     border: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.table__tool .fa-solid {
+.table__tool i {
     cursor: pointer;
-    margin-left: 10px;
+}
+
+.table__tool i:hover {
+    color: #555;
+}
+
+.table__tool i:active {
+    scale: 0.9;
 }

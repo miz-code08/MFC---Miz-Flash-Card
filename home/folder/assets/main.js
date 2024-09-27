@@ -1,3 +1,4 @@
+// ===============================================NEW FLASHCARD===============================================
 const newBox = document.querySelector(`.newflashcard`);
 const newBoxBtn = document.querySelector(`.new__btn`);
 
@@ -22,6 +23,21 @@ cancel.addEventListener("click", function(e) {
 
 create.addEventListener("click", function(e) {
 
+    if(front.value === "") {
+        alert("Vui lòng điền vào mặt trước của thẻ");
+    }
+    else if(back.value === "") {
+        alert("Vui lòng điền vào mặt sau của thẻ")
+    }
+    else if(cardType.value === "") {
+        alert("Vui lòng điền vào loại thẻ")
+    }
+    else {
+        createTr();
+    }    
+})
+
+function createTr() {
     const newRow = document.createElement('tr');
     // Tạo và thêm các phần tử td vào tr
     const frontDesc = document.createElement('td');
@@ -60,4 +76,29 @@ create.addEventListener("click", function(e) {
     cardType.value = "";
     back.value = "";
     newBox.hidden = true;
+}
+
+// ===============================================DELETE===============================================
+
+const flashCard = document.querySelectorAll(`tr`);
+const trash = document.querySelectorAll(`.fa-trash`);
+
+trash.forEach(function(e, idx) {
+    e.addEventListener("click", function() {
+        flashCard[idx].remove();
+    })
 })
+
+// ===============================================EDIT===============================================
+
+const edit = document.querySelectorAll(`.fa-pen-to-square`);
+
+edit.forEach(function(e, idx) {
+    e.addEventListener("click", function() {
+        // flashCard[idx].remove();
+    })
+})
+
+// function editFlashCard() {
+
+// }
