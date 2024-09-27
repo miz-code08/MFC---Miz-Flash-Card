@@ -4,7 +4,10 @@ function flipCard() {
     flashcard.classList.toggle('flipped');
 }
 
-
+const flipcard = document.querySelector(`#flipcard`);
+flipcard.addEventListener("click", function(e) {
+    flipCard();
+})
 // ================================================== prev next ==================================================
 function countCLick(a) {
     i += a;

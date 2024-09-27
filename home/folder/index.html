@@ -101,11 +101,11 @@
             <div class="newflashcard" hidden>
                 <p class="newflashcard__desc">New flashcard</p>
                 <input type="text" name="front" id="front" class="front" placeholder="front" autocomplete="off">
-                <input type="text" name="backside" id="backside" class="backside" placeholder="backside" autocomplete="off">
+                <input type="text" name="back" id="back" class="back" placeholder="back" autocomplete="off">
                 <input type="text" name="cardtype" id="cardtype" class="cardtype" placeholder="card type" autocomplete="off">
                 <div class="newflashcard__btn">                    
-                    <button>Cancel</button>
-                    <button>Create</button>
+                    <button id="cancel">Cancel</button>
+                    <button id="create">Create</button>
                 </div>
             </div>
         </div>        
@@ -123,9 +123,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Cat</td>
-                        <td>Danh Từ</td>
-                        <td>Mèo</td>
+                        <td id="front__desc">Cat</td>
+                        <td id="cardtype__desc">Danh Từ</td>
+                        <td id="back__desc">Mèo</td>
                         <td class="table__tool">
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>

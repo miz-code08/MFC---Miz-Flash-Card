@@ -199,3 +199,8 @@ nav {
 .folder__more:hover {    
     background: #bbbbbb;
 }
+
+.folder_item__desc {
+    display: inline-block;
+    word-break: break-all;
+}
