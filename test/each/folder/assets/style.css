@@ -189,4 +189,9 @@ nav {
     color: #fff;
     padding: 8px 10px;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit button:active {
+    scale: 0.9;
 }

@@ -56,7 +56,7 @@
         </div>  
         <!-- test -->
         <div class="nav_item">
-            <a href="../../learn/index.html" class="nav_item__test nav_link">
+            <a href="../../test/index.html" class="nav_item__test nav_link">
                 <img src="../../images/test.svg" alt="test" class="nav_link__img">        
                 <span class="nav_link__span">Test</span>
             </a>                          
@@ -108,6 +108,33 @@
                     <button id="create">Create</button>
                 </div>
             </div>
+            <!-- hộp thoại edit card -->
+            <div class="editflashcard" hidden>
+                <p class="editflashcard__desc">Edit flashcard</p>
+                <input type="text" name="editfront" id="editfront" class="editfront" placeholder="front" autocomplete="off">
+                <input type="text" name="editback" id="editback" class="editback" placeholder="back" autocomplete="off">
+                <input type="text" name="editcardtype" id="editcardtype" class="editcardtype" placeholder="card type" autocomplete="off">
+                <div class="editflashcard__btn">                    
+                    <button id="editcancel">Cancel</button>
+                    <button id="editcreate">Accept</button>
+                </div>
+            </div>
+            <!-- hộp thoại thông báo xóa thẻ -->
+            <div class="del" hidden>
+                <p class="del__desc">Do you want to delete the card?</p>
+                <div class="del__btn">                    
+                    <button id="delcancel">Cancel</button>
+                    <button id="delcreate">Accept</button>
+                </div>
+            </div>
+            <!-- hộp thoại thông báo xóa tất cả thẻ -->
+            <div class="delete_all" hidden>
+                <p class="delete_all__desc">Do you want to delete all the cards?</p>
+                <div class="delete_all__btn">                    
+                    <button id="deletecancel">Cancel</button>
+                    <button id="deletecreate">Accept</button>
+                </div>
+            </div>
         </div>        
         <div class="line"></div>
         <!-- table -->
@@ -116,16 +143,16 @@
                 <thead class="table__head">
                     <tr>
                         <th>Front card</th>
-                        <th>Card type</th>
                         <th>Back card</th>
+                        <th>Card type</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td id="front__desc">Cat</td>
-                        <td id="cardtype__desc">Danh Từ</td>
                         <td id="back__desc">Mèo</td>
+                        <td id="cardtype__desc">Danh Từ</td>
                         <td class="table__tool">
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
@@ -133,8 +160,8 @@
                     </tr>
                     <tr>
                         <td id="front__desc">Dog</td>
-                        <td id="cardtype__desc">Danh Từ</td>
                         <td id="back__desc">Chó</td>
+                        <td id="cardtype__desc">Danh Từ</td>
                         <td class="table__tool">
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
@@ -142,8 +169,8 @@
                     </tr>
                     <tr>
                         <td id="front__desc">Bird</td>
-                        <td id="cardtype__desc">Danh Từ</td>
                         <td id="back__desc">Chim</td>
+                        <td id="cardtype__desc">Danh Từ</td>
                         <td class="table__tool">
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>
@@ -151,8 +178,8 @@
                     </tr>
                     <tr>
                         <td id="front__desc">Elephant</td>
+                        <td id="back__desc">Voi</td>
                         <td id="cardtype__desc">Danh Từ</td>
-                        <td id="back__desc">Elephant</td>
                         <td class="table__tool">
                             <i class="fa-solid fa-pen-to-square"></i>
                             <i class="fa-solid fa-trash"></i>

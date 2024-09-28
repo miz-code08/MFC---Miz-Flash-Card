@@ -117,8 +117,11 @@ nav {
     margin: 20px 0px;
     border: 1px solid #fff;
 }
-/* ========================================NEW BOX======================================== */
-.newflashcard {
+/* ========================================HỘP THOẠI======================================== */
+.newflashcard,
+.editflashcard,
+.delete_all,
+.del {
     /* display: none; */
     position: absolute;
     top: 50%;
@@ -132,28 +135,40 @@ nav {
     border: 3px solid #d7d7d7;
 }
 
-.newflashcard__desc {
+.newflashcard__desc,
+.editflashcard__desc,
+.delete_all__desc,
+.del__desc {
     font-size: 2rem;
     margin-left: 3px;
 }
 
 .front,
 .back,
-.cardtype {
+.cardtype,
+.editfront,
+.editback,
+.editcardtype {
     width: 100%;
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 5px;
 }
 
-.newflashcard__btn {
+.newflashcard__btn,
+.editflashcard__btn,
+.delete_all__btn,
+.del__btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
     gap: 10px;
 }
-.newflashcard__btn button{
+.newflashcard__btn button,
+.editflashcard__btn button,
+.delete_all__btn button,
+.del__btn button {
     border: none;
     padding: 10px;
     border-radius: 20px;
@@ -162,7 +177,10 @@ nav {
     transition: 0.3s;
 }
 
-.newflashcard__btn button:hover {
+.newflashcard__btn button:hover,
+.editflashcard__btn button:hover,
+.delete_all__btn button:hover,
+.del__btn button:hover {
     background: #d3d3d3;
 }
 /* ========================================CARD LIST======================================== */
